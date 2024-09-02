@@ -6,7 +6,7 @@ class ConsultasModel {
         this.id = uuid;
         this.razao_social = dto.razaoSocial;
         this.cnpj = dto.cnpj;
-        this.total_contratos_periodo = dto.totalContratosPeriodo;
+        this.total_valor_contratos_periodo = dto.totalContratosPeriodo;
         this.data_inicial = dto.dataInicial;
         this.data_final = dto.dataFinal;
         this.data_consulta = dto.dataConsulta;

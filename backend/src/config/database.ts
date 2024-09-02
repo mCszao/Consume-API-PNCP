@@ -22,10 +22,10 @@ class Database {
         try {
             await this.connection.query('SELECT NOW()');
             console.log(
-                'Connection with database has been established successfully'
+                'Conexão com o banco de dados estabelecida com sucesso.'
             );
         } catch (error) {
-            console.log('Connection with database has been failed');
+            console.log('Conexão com o banco de dados falhou.');
         }
     }
 }

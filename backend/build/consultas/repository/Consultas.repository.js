@@ -22,7 +22,7 @@ class ConsultasRepository {
     save(entity) {
         return __awaiter(this, void 0, void 0, function* () {
             try {
-                yield this.repository.query('INSERT INTO consultas (id, razao_social, cnpj, total_contratos_periodo, data_inicial, data_final, data_consulta) VALUES ($1, $2, $3, $4, $5, $6, $7)', [entity.id, entity.razao_social, entity.cnpj, entity.total_contratos_periodo, entity.data_inicial, entity.data_final, entity.data_consulta]);
+                yield this.repository.query('INSERT INTO consultas (id, razao_social, cnpj, total_valor_contratos_periodo, data_inicial, data_final, data_consulta) VALUES ($1, $2, $3, $4, $5, $6, $7)', [entity.id, entity.razao_social, entity.cnpj, entity.total_valor_contratos_periodo, entity.data_inicial, entity.data_final, entity.data_consulta]);
             }
             catch (error) {
                 console.log('Error: ' + error);
@@ -34,7 +34,7 @@ class ConsultasRepository {
             const list = [];
             try {
                 let response = yield this.repository.query('SELECT * FROM consultas');
-                response.rows.forEach((consulta) => list.push(Consultas_model_1.ConsultasModel.from(consulta.id, consulta.razao_social, consulta.cnpj, consulta.total_contratos_periodo, consulta.data_inicial, consulta.data_final, consulta.data_consulta)));
+                response.rows.forEach((consulta) => list.push(Consultas_model_1.ConsultasModel.from(consulta.id, consulta.razao_social, consulta.cnpj, consulta.total_valor_contratos_periodo, consulta.data_inicial, consulta.data_final, consulta.data_consulta)));
             }
             catch (error) {
                 console.error(error);

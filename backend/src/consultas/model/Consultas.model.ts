@@ -4,7 +4,7 @@ export interface IConsultasModel {
     id: string;
     razao_social: string;
     cnpj: string;
-    total_contratos_periodo: string;
+    total_valor_contratos_periodo: string;
     data_inicial: string;
     data_final: string;
     data_consulta: string;
@@ -14,7 +14,7 @@ export class ConsultasModel implements IConsultasModel {
     id: string;
     razao_social: string;
     cnpj: string;
-    total_contratos_periodo: string;
+    total_valor_contratos_periodo: string;
     data_inicial: string;
     data_final: string;
     data_consulta: string;
@@ -23,7 +23,7 @@ export class ConsultasModel implements IConsultasModel {
         this.id= uuid;
         this.razao_social = dto.razaoSocial;
         this.cnpj = dto.cnpj;
-        this.total_contratos_periodo  = dto.totalContratosPeriodo;
+        this.total_valor_contratos_periodo  = dto.totalContratosPeriodo;
         this.data_inicial = dto.dataInicial;
         this.data_final = dto.dataFinal;
         this.data_consulta = dto.dataConsulta;

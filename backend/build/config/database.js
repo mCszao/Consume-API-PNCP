@@ -30,10 +30,10 @@ class Database {
         return __awaiter(this, void 0, void 0, function* () {
             try {
                 yield this.connection.query('SELECT NOW()');
-                console.log('Connection with database has been established successfully');
+                console.log('Conexão com o banco de dados estabelecida com sucesso.');
             }
             catch (error) {
-                console.log('Connection with database has been failed');
+                console.log('Conexão com o banco de dados falhou.');
             }
         });
     }

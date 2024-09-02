@@ -14,8 +14,8 @@ export class ConsultasRepository implements IConsultasRepository {
     public async save(entity: ConsultasModel): Promise<void> {
         try {
             await this.repository.query(
-                'INSERT INTO consultas (id, razao_social, cnpj, total_contratos_periodo, data_inicial, data_final, data_consulta) VALUES ($1, $2, $3, $4, $5, $6, $7)',
-                [entity.id, entity.razao_social, entity.cnpj, entity.total_contratos_periodo, entity.data_inicial, entity.data_final, entity.data_consulta]
+                'INSERT INTO consultas (id, razao_social, cnpj, total_valor_contratos_periodo, data_inicial, data_final, data_consulta) VALUES ($1, $2, $3, $4, $5, $6, $7)',
+                [entity.id, entity.razao_social, entity.cnpj, entity.total_valor_contratos_periodo, entity.data_inicial, entity.data_final, entity.data_consulta]
             );
         } catch (error) {
             console.log('Error: ' + error);
@@ -30,7 +30,7 @@ export class ConsultasRepository implements IConsultasRepository {
             consulta.id,
             consulta.razao_social,
             consulta.cnpj,
-            consulta.total_contratos_periodo,
+            consulta.total_valor_contratos_periodo,
             consulta.data_inicial,
             consulta.data_final, 
             consulta.data_consulta)));
