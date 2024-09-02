@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Consulta PNCP</title>
+  </head>
+  <body>
+    <body>
+      <div class="container">
+        <h1>Consulta de Contratos de Órgãos Públicos</h1>
+        <section>
+          <label for="cnpj">CNPJ do Órgão:</label>
+          <input type="number" class="cnpj" name="cnpj" required />
+  
+          <label for="dataInicial">Data Inicial:</label>
+          <input type="date" class="dataInicial" name="dataInicial" required />
+  
+          <label for="dataFinal">Data Final:</label>
+          <input type="date" class="dataFinal" name="dataFinal" required />
+  
+          <button class="consulta">Consultar</button>
+        </section>
+  
+        <div class="resultados"></div>
+      </div>
+    </body>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

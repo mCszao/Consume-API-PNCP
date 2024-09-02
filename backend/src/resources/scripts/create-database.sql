@@ -1,0 +1,1 @@
+CREATE DATABASE pncp_contract_db;

@@ -1,0 +1,17 @@
+{
+  "name": "consume-api-pncp",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+    "consume-api-pncp": "file:",
+    "js-base64": "^3.7.7"
+  }
+}

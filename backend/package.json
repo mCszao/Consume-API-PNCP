@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend para salvar consulta de contrato ",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon ./build/server.js",
+    "start-dev": "tsc && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "backend",
+    "pncp"
+  ],
+  "author": "Marcos 'mCs' Almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.5.2",
+    "@types/pg": "^8.11.8",
+    "@types/uuid": "^10.0.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "backend": "file:",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "pg": "^8.12.0",
+    "uuid": "^10.0.0"
+  }
+}
