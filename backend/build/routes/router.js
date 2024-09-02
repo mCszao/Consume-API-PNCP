@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
-const Consultas_controller_1 = __importDefault(require("../analytics/controller/Consultas.controller"));
+const Consultas_controller_1 = __importDefault(require("../consultas/controller/Consultas.controller"));
 const router = express_1.default.Router();
 router.use(express_1.default.json({ limit: '10mb' }));
 router.use(express_1.default.urlencoded({ limit: '10mb', extended: true }));

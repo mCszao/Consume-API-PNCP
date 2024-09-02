@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
-import AnalyticsController from '../analytics/controller/Consultas.controller';
+import AnalyticsController from '../consultas/controller/Consultas.controller';
 
 const router = express.Router();
 router.use(express.json({limit: '10mb'}));
